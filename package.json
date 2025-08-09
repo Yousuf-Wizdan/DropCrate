@@ -17,6 +17,7 @@
     "@heroui/system": "^2.4.20",
     "@heroui/theme": "^2.4.20",
     "@hookform/resolvers": "^5.2.1",
+    "@imagekit/next": "^2.1.2",
     "@prisma/client": "^6.13.0",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.539.0",
