@@ -4,6 +4,11 @@ import { auth } from '@clerk/nextjs/server';
 import { NextRequest, NextResponse } from 'next/server';
 import cuid from 'cuid';
 
+export async function GET(req: NextRequest){
+    
+}
+
+
 export async function POST(req: NextRequest) {
     try {
 
@@ -72,7 +77,11 @@ export async function POST(req: NextRequest) {
         })
 
     } catch (err) {
-
+        console.error("Error creating folder:", err);
+        return NextResponse.json(
+            { error: "Failed to create folder" },
+            { status: 500 }
+        );
 
     }
 }
